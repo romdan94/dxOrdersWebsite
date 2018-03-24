@@ -1,39 +1,41 @@
 <template>
   <div id="app">
-    <img src="./assets/dx_header_logo.png">
+    <app-menu-bar></app-menu-bar>
     <h1>DxOrders</h1>
-    <img src="./assets/jumbotron.jpg">
-    <p> We are a healthcare app dedicated to helping bring together doctors in patients in order to make it easier for
-    users to keep track of their health needs</p>
+    <router-view></router-view>
 
   </div>
 </template>
 
 <script>
+import MenuBar from './components/MenuBar.vue'
+import Body from './components/AppBody.vue'
+
 export default {
   name: 'app',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components: {
+    'app-menu-bar': MenuBar,
+    'app-body': Body
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 
 h1, h2 {
   font-weight: normal;
+  text-align: center;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
 }
 
 body{
-  background-color: #C0C0C0;
+  background-color: #DCDCDC;
 }
 
 
