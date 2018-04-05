@@ -31,11 +31,16 @@ img {
 
 }
 p {
-  margin-right: 420px;
-  margin-left: 420px;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  margin-right: 355px;
+  margin-left: 370px;
+
   color: #2c3e50;
 }
-
+h3{
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+}
+div{
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+}
 
 </style>

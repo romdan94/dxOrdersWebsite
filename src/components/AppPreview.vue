@@ -1,7 +1,18 @@
 <template>
   <div >
-        <img src="../assets/shot_health.png"><p>look at this</p>
-        <img class="medshot" src="../assets/shot_meds.png"><p>look at that!</p>
+
+      <p style="float: left;">
+        <img src="../assets/shot_health.png"> <h3>Manage your prescriptions</h3> look at this
+      </p>
+
+
+    <div class="one">
+
+    </div>
+    <p style="float: right;"><img src="../assets/shot_health.png"> <h3>Manage your prescriptions</h3> look at this</p>
+
+
+
   </div>
 </template>
 
@@ -18,13 +29,29 @@ export default {
 
 <style scoped>
 
-#apppreview {
+
+
+.one{
+  float: right;
+  display: inline-block;
+}
+
+.rightSide{
+  padding: 0 20px 20px 0;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  text-align: left;
-
-}
-img.medshot{
-  text-align: right;
+  float: right;
 }
 
+
+p{
+
+  padding: 0 20px 20px 0;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+
+}
+
+div{
+  margin-left: 200px;
+  margin-right: 200px;
+}
 </style>

@@ -5,6 +5,7 @@
       <li> <img src="../assets/dx_header_logo.png"> </li>
       <li> <router-link to="/"> Home </router-link> </li>
       <li> <router-link to="/app-preview"> View our App </router-link> </li>
+      <li> <router-link to="/meet-the-team"> Meet Our Team </router-link></li>
     </ul>
 
   </div>
@@ -25,6 +26,7 @@ export default {
 
 ul {
     list-style-type: none;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -33,6 +35,7 @@ ul {
 
 li {
     float: left;
+
 }
 
 li a {
@@ -41,6 +44,7 @@ li a {
     text-align: center;
     padding: 14px 14px;
     text-decoration: none;
+
 }
 
 li a:hover {

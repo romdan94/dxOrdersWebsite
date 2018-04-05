@@ -10,6 +10,7 @@
 <script>
 import MenuBar from './components/MenuBar.vue'
 import Body from './components/AppBody.vue'
+import MeetTheTeam from './components/MeetTheTeam.vue'
 
 export default {
   name: 'app',
@@ -20,7 +21,8 @@ export default {
   },
   components: {
     'app-menu-bar': MenuBar,
-    'app-body': Body
+    'app-body': Body,
+    'app-meet-the-team': MeetTheTeam
   }
 }
 </script>
