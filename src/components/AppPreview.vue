@@ -1,15 +1,19 @@
 <template>
   <div >
+    <br>
+    <table style="width:100%">
+      <tr>
+        <th><img src="../assets/shot_health.png"></th>
+        <th style="padding-left: 300px; ">{{managePrescriptions}}</th>
+    </tr>
+    </table>
 
-      <p style="float: left;">
-        <img src="../assets/shot_health.png"> <h3>Manage your prescriptions</h3> look at this
-      </p>
-
-
-    <div class="one">
-
-    </div>
-    <p style="float: right;"><img src="../assets/shot_health.png"> <h3>Manage your prescriptions</h3> look at this</p>
+    <table style="width:100%">
+      <tr>
+        <th>{{manageMeds}}</th>
+        <th style="display: block; padding-left: 300px;"><img src="../assets/shot_meds.png"></th>
+      </tr>
+    </table>
 
 
 
@@ -21,7 +25,10 @@ export default {
   name: 'apppreview',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      managePrescriptions: 'Managing a bunch of medicine is a pain. when do I take them? Did I forget to take one this morning? Do I need to get a refill? Manage everything right on your phone to make sure youre doing everything you need to',
+      manageMeds: 'With our app managing your prescriptions is a breeze! You can see exactly what medicine you have prescribed to you and what date it was prescribed on as well as who prescribed it to you'
+
     }
   }
 }
@@ -31,27 +38,18 @@ export default {
 
 
 
-.one{
-  float: right;
-  display: inline-block;
-}
 
-.rightSide{
-  padding: 0 20px 20px 0;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  float: right;
+
+img{
+  height: 500px;
+  width: 300px;
 }
 
 
-p{
-
-  padding: 0 20px 20px 0;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-
-}
 
 div{
-  margin-left: 200px;
-  margin-right: 200px;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 </style>
