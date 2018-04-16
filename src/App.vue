@@ -1,7 +1,16 @@
 <template>
   <div id="app">
     <app-menu-bar></app-menu-bar>
+
+
+
+
+
+
     <h1>DxOrders</h1>
+    <div id="app" class="component">
+
+    </div>
     <router-view></router-view>
 
   </div>
@@ -11,6 +20,7 @@
 import MenuBar from './components/MenuBar.vue'
 import Body from './components/AppBody.vue'
 import MeetTheTeam from './components/MeetTheTeam.vue'
+import Mailchimp from './components/Mailchimp.vue'
 
 export default {
   name: 'app',
@@ -22,7 +32,8 @@ export default {
   components: {
     'app-menu-bar': MenuBar,
     'app-body': Body,
-    'app-meet-the-team': MeetTheTeam
+    'app-meet-the-team': MeetTheTeam,
+    'app-mail-chimp': Mailchimp
   }
 }
 </script>

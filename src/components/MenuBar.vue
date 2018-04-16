@@ -6,8 +6,9 @@
       <li> <router-link to="/"> Home </router-link> </li>
       <li> <router-link to="/app-preview"> View our App </router-link> </li>
       <li> <router-link to="/meet-the-team"> Meet Our Team </router-link></li>
-    </ul>
 
+    </ul>
+    
   </div>
 </template>
 
